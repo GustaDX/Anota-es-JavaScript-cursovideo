@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira pagina</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        h1{
+            background-color: rgb(0, 0, 82);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola Nome</h1>
+    <p>Primeiros passos com javascript</p>
+    <script>
+        var nome = window.prompt("Nome") //Atribuindo um valor a variavel
+        window.alert("Ola, " + nome + " !")//concatenação
+        var n1 = Number(window.prompt("insira um numero"))
+        var n2 = Number(window.prompt("insira outro numero"))
+        s = n1 + n2
+        window.alert("A soma dos numeros é " + String(s))
+        window.alert(`Seu nome é ${nome} o primeiro numero é ${n1.toFixed(2)} e o outro é ${n2.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`)
+        document.write(`seu nome tem ${nome.length} letras,seu nome em maisculo ${nome.toUpperCase()}, em minusculo ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
