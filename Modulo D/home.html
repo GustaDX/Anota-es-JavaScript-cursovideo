@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Sistema de nacionalidade</h1>
+        pais: <input type="text" id="entrada">
+        <input type="button" value="Verificar" onclick="resposta()">
+    </div>
+    <div id="inserir">
+
+    </div>
+    <script>
+        function resposta(){
+            var ent = document.getElementById('entrada')
+            var ins = document.getElementById('inserir')
+            ent = String(ent.value)
+            ins.innerHTML = `<p>Seu pais é ${ent}<p>`
+            if(ent.toLowerCase() == 'brasil'){
+                ins.innerHTML += `<p> Você é brasileiro<p>`
+            }
+            else{
+                ins.innerHTML += `<p> Você é estrangeiro<p>`
+            }
+        }
+    </script>
+</body>
+</html>
